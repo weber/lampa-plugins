@@ -44,7 +44,7 @@
    - `https://weber.github.io/lampa-plugins/history-first.js`
 3. Полностью перезапустите Lampa.
 
-Если GitHub Pages ещё не включён, используйте raw-ссылки:
+raw-ссылки:
 
 - `https://raw.githubusercontent.com/weber/lampa-plugins/master/fpb.js`
 - `https://raw.githubusercontent.com/weber/lampa-plugins/master/history-first.js`
@@ -76,7 +76,9 @@
 
 Если секция `LampaWeb` уже есть, добавьте объекты в существующий массив `customPlugins`.
 
-### 3. Включить GitHub Pages
+### 3. GitHub Pages (для форка)
+
+В основном репозитории Pages уже включён. Этот шаг нужен только при форке:
 
 1. Репозиторий должен быть публичным.
 2. GitHub → **Settings** → **Pages**.
@@ -84,10 +86,7 @@
 4. Branch: `master`, folder: `/ (root)`.
 5. Сохранить и подождать 1–2 минуты.
 
-После этого ссылки будут:
-
-- `https://weber.github.io/lampa-plugins/fpb.js`
-- `https://weber.github.io/lampa-plugins/history-first.js`
+Ссылки будут вида `https://USER.github.io/lampa-plugins/fpb.js` — замените `USER` на свой ник.
 
 ## Настройка быстрых кнопок
 
@@ -113,6 +112,7 @@
 
 - URL плагина должен открываться в браузере и отдавать JavaScript, а не HTML.
 - Приватный репозиторий не подойдёт.
+- GitHub Pages собирается из ветки `master`; после пуша подождите 1–2 минуты. Если ссылка временно 404 — проверьте Actions и обновите страницу.
 - После обновления плагина полностью перезапустите Lampa.
 - Если плагин не появился, проверьте список расширений и кэш.
 - В `history-first.js` отладка выключена (`DEBUG = false`); при необходимости включите.
